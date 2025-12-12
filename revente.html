@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collecte sur site | Eziotech - Haute-Garonne</title>
+    <meta name="description" content="Service de collecte sécurisée de matériel informatique en Haute-Garonne. Convention signée, traçabilité complète et conformité RGPD garanties.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="images/Eziotech.png" alt="Logo Eziotech" class="logo-icon">
+                Eziotech
+            </a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="navMenu">
+                <li><a href="index.html#accueil">Accueil</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#pourquoi">À propos</a></li>
+                <li><a href="index.html#zone">Zone</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="padding: 6rem 2rem 4rem;">
+        <div class="container fade-in">
+            <h1>Revente solidaire : offrir une seconde chance à votre matériel et <span class="highlight">soutenir ceux qui en ont besoin</span></h1>
+            <div class="cta-buttons" style="margin-top: 2rem;">
+                <a href="#demande" class="btn btn-primary">En savoir plus</a>
+                <a href="index.html#services" class="btn btn-secondary">Tous nos services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section style="padding: 4rem 2rem; background: white;">
+        <div class="container" style="max-width: 1100px;">
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-gray); margin: 0;">
+                Une partie du matériel reconditionné par Eziotech est réorientée vers un programme de <strong>revente solidaire</strong>. 
+                L'objectif : rendre l'informatique accessible à tous et soutenir les structures locales.
+            </p>
+        </div>
+    </section>
+
+    <!-- À qui bénéficient les équipements -->
+    <section style="padding: 4rem 2rem; background: var(--bg-gray);">
+        <div class="container" style="max-width: 1100px;">
+            <h2 style="font-size: 2rem; color: var(--primary); margin: 0 0 2rem 0;">À qui bénéficient les équipements ?</h2>
+            
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-gray); margin: 0 0 2rem 0;">
+                Nous proposons du matériel reconditionné :
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 15px; margin: 0 0 2rem 0;">
+                <div style="display: flex; align-items: center; gap: 15px; padding: 15px; background: linear-gradient(135deg, #667eea08, #764ba208); border-radius: 12px;">
+                    <span style="font-size: 2em;">👥</span>
+                    <span style="font-weight: 500; color: #555;">Aux particuliers à petit budget</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 15px; padding: 15px; background: linear-gradient(135deg, #667eea08, #764ba208); border-radius: 12px;">
+                    <span style="font-size: 2em;">🤝</span>
+                    <span style="font-weight: 500; color: #555;">Aux associations</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 15px; padding: 15px; background: linear-gradient(135deg, #667eea08, #764ba208); border-radius: 12px;">
+                    <span style="font-size: 2em;">🎓</span>
+                    <span style="font-weight: 500; color: #555;">Aux écoles</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 15px; padding: 15px; background: linear-gradient(135deg, #667eea08, #764ba208); border-radius: 12px;">
+                    <span style="font-size: 2em;">🏢</span>
+                    <span style="font-weight: 500; color: #555;">Aux structures en difficulté</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 15px; padding: 15px; background: linear-gradient(135deg, #667eea08, #764ba208); border-radius: 12px;">
+                    <span style="font-size: 2em;">💡</span>
+                    <span style="font-weight: 500; color: #555;">Aux projets solidaires locaux</span>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 2rem; border-radius: 10px; border-left: 4px solid var(--primary); margin: 0;">
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-gray); margin: 0;">
+                    <strong>Un matériel fiable,</strong> remis à neuf et vendu à prix réduit.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Un impact social positif -->
+    <section style="padding: 4rem 2rem; background: white;">
+        <div class="container" style="max-width: 1100px;">
+            <h2 style="font-size: 2rem; color: var(--primary); margin: 0 0 2rem 0;">Un impact social positif</h2>
+            
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-gray); margin: 0 0 2rem 0;">
+                Ce service permet de :
+            </p>
+
+            <div style="display: grid; gap: 1.5rem; margin: 0 0 2rem 0;">
+                <div style="display: flex; gap: 1.5rem; align-items: start; background: var(--bg-gray); padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <div style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">1</div>
+                    <div>
+                        <h3 style="margin: 0 0 0.5rem 0; color: var(--primary);">Réduire la fracture numérique</h3>
+                        <p style="margin: 0; color: var(--text-gray);">Permettre l'accès à l'informatique pour tous</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 1.5rem; align-items: start; background: var(--bg-gray); padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <div style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">2</div>
+                    <div>
+                        <h3 style="margin: 0 0 0.5rem 0; color: var(--primary);">Soutenir l'inclusion numérique</h3>
+                        <p style="margin: 0; color: var(--text-gray);">Faciliter l'accès aux services en ligne et à la formation</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 1.5rem; align-items: start; background: var(--bg-gray); padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <div style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">3</div>
+                    <div>
+                        <h3 style="margin: 0 0 0.5rem 0; color: var(--primary);">Équiper les associations</h3>
+                        <p style="margin: 0; color: var(--text-gray);">Fournir du matériel aux structures qui manquent de moyens</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 1.5rem; align-items: start; background: var(--bg-gray); padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <div style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">4</div>
+                    <div>
+                        <h3 style="margin: 0 0 0.5rem 0; color: var(--primary);">Offrir une seconde vie utile</h3>
+                        <p style="margin: 0; color: var(--text-gray);">Transformer votre ancien matériel en opportunité pour d'autres</p>
+                    </div>
+                </div>
+            </div>
+
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-gray); margin: 0;">
+                Chaque équipement devient une opportunité pour ceux qui en ont le plus besoin.
+            </p>
+        </div>
+    </section>
+
+    <!-- Une économie circulaire complète -->
+    <section style="padding: 4rem 2rem; background: var(--bg-gray);">
+        <div class="container" style="max-width: 1100px;">
+            <h2 style="font-size: 2rem; color: var(--primary); margin: 0 0 2rem 0;">Une économie circulaire complète</h2>
+            
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-gray); margin: 0 0 2rem 0;">
+                Grâce à vous :
+            </p>
+
+            <div style="display: grid; gap: 1.5rem; margin: 0 0 2rem 0;">
+                <div style="display: flex; gap: 1.5rem; align-items: start; background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <div style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">1</div>
+                    <div>
+                        <h3 style="margin: 0 0 0.5rem 0; color: var(--primary);">Le matériel est collecté</h3>
+                        <p style="margin: 0; color: var(--text-gray);">Récupération sécurisée de vos équipements obsolètes</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 1.5rem; align-items: start; background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <div style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">2</div>
+                    <div>
+                        <h3 style="margin: 0 0 0.5rem 0; color: var(--primary);">Reconditionné</h3>
+                        <p style="margin: 0; color: var(--text-gray);">Diagnostic, nettoyage, upgrade et tests qualité</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 1.5rem; align-items: start; background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <div style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">3</div>
+                    <div>
+                        <h3 style="margin: 0 0 0.5rem 0; color: var(--primary);">Redistribué là où il est utile</h3>
+                        <p style="margin: 0; color: var(--text-gray);">Mis à disposition des bénéficiaires du programme solidaire</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 1.5rem; align-items: start; background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <div style="background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">4</div>
+                    <div>
+                        <h3 style="margin: 0 0 0.5rem 0; color: var(--primary);">Ou recyclé si nécessaire</h3>
+                        <p style="margin: 0; color: var(--text-gray);">Traitement responsable quand il ne peut plus être réutilisé</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 2rem; border-radius: 10px; border-left: 4px solid var(--primary); margin: 0;">
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-gray); margin: 0;">
+                    <strong>Un modèle vertueux</strong> qui combine environnement, économie circulaire et solidarité.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Les bénéfices pour tous -->
+    <section style="padding: 4rem 2rem; background: white;">
+        <div class="container" style="max-width: 1100px;">
+            <h2 style="font-size: 2rem; color: var(--primary); margin: 0 0 2rem 0;">Les bénéfices pour tous</h2>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 0;">
+                <div style="background: var(--bg-gray); padding: 2rem; border-radius: 10px; text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🏢</div>
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Pour les entreprises</h3>
+                    <p style="color: var(--text-gray); line-height: 1.6; margin: 0;">Valorisation responsable de leur matériel avec un impact social positif</p>
+                </div>
+
+                <div style="background: var(--bg-gray); padding: 2rem; border-radius: 10px; text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">❤️</div>
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Pour les bénéficiaires</h3>
+                    <p style="color: var(--text-gray); line-height: 1.6; margin: 0;">Accès à du matériel fiable et performant à prix solidaire</p>
+                </div>
+
+                <div style="background: var(--bg-gray); padding: 2rem; border-radius: 10px; text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🌱</div>
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Pour la planète</h3>
+                    <p style="color: var(--text-gray); line-height: 1.6; margin: 0;">Moins de déchets, moins de production, impact environnemental réduit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section style="padding: 4rem 2rem; background: var(--bg-gray);" id="demande">
+        <div class="container" style="max-width: 1100px;">
+            <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); padding: 3rem; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                <h2 style="font-size: 2rem; color: #1a1a2e; margin: 0 0 2rem 0;">Participez à notre démarche solidaire</h2>
+                
+                <p style="font-size: 1.2rem; line-height: 1.8; color: #1a1a2e; margin: 0 0 2rem 0;">
+                    En confiant votre matériel à Eziotech, vous contribuez à <strong>réduire la fracture numérique</strong> 
+                    et à soutenir les structures locales qui en ont besoin.
+                </p>
+
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="btn btn-primary">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Eziotech</h3>
+                <p>Valorisation et reconditionnement informatique en Haute-Garonne</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="collecte.html">Collecte sur site</a></li>
+                    <li><a href="effacement.html">Effacement certifié</a></li>
+                    <li><a href="reconditionnement.html">Reconditionnement</a></li>
+                    <li><a href="recyclage.html">Recyclage</a></li>
+                    <li><a href="revente.html">Revente solidaire</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Informations</h3>
+                <ul>
+                    <li><a href="index.html#pourquoi">À propos</a></li>
+                    <li><a href="index.html#zone">Zone d'intervention</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Légal</h3>
+                <ul>
+                    <li><a href="#mentions">Mentions légales</a></li>
+                    <li><a href="#rgpd">Politique RGPD</a></li>
+                    <li><a href="#cgv">CGV</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Eziotech - Tous droits réservés | SIRET: XXX XXX XXX XXXXX</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
