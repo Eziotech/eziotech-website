@@ -178,69 +178,68 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-        <h2 class="section-title">Demander une collecte</h2>
-        <p class="section-subtitle">Remplissez le formulaire, nous vous recontactons sous 24h</p>
+   <section class="contact-section" id="contact">
+    <h2 class="section-title">Nous contacter</h2>
+    <p class="section-subtitle">Remplissez le formulaire, nous vous recontactons sous 24h</p>
 
-        <div class="contact-container">
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="name">Nom / Entreprise *</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+    <div class="contact-container">
+        
+        <div id="formMessage" class="form-message"></div>
 
-                <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+        <form id="contactForm">
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
 
-                <div class="form-group">
-                    <label for="phone">Téléphone *</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
+            <div class="form-group">
+                <label for="name">Nom / Entreprise *</label>
+                <input type="text" id="name" name="nom_entreprise" required>
+            </div>
 
-                <div class="form-group">
-                    <label for="service">Service demandé *</label>
-                    <select id="service" name="service" required>
-                        <option value="">-- Sélectionnez --</option>
-                        <option value="collecte">Collecte de matériel</option>
-                        <option value="effacement">Effacement de données</option>
-                        <option value="reconditionnement">Reconditionnement</option>
-                        <option value="recyclage">Recyclage</option>
-                        <option value="autre">Autre demande</option>
-                    </select>
-                </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message"
-                        placeholder="Décrivez votre besoin (type de matériel, quantité, localisation...)"></textarea>
-                </div>
+            <div class="form-group">
+                <label for="phone">Téléphone *</label>
+                <input type="tel" id="phone" name="telephone" required>
+            </div>
 
-                <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer la demande</button>
-            </form>
+            <div class="form-group">
+                <label for="service">Service demandé *</label>
+                <select id="service" name="service_demande" required>
+                    <option value="">-- Sélectionnez --</option>
+                    <option value="Collecte de matériel">Collecte de matériel</option>
+                    <option value="Effacement de données">Effacement de données</option>
+                    <option value="Reconditionnement">Reconditionnement</option>
+                    <option value="Recyclage">Recyclage</option>
+                    <option value="Autre demande">Autre demande</option>
+                </select>
+            </div>
 
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-item-icon">📧</div>
-                    <h4>Email</h4>
-                    <p>contact@eziotech.fr</p>
-                </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"
+                    placeholder="Décrivez votre besoin (type de matériel, quantité, localisation...)"></textarea>
+            </div>
 
-                <div class="contact-item">
-                    <div class="contact-item-icon">📞</div>
-                    <h4>Téléphone</h4>
-                    <p>06 XX XX XX XX</p>
-                </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer la demande</button>
+        </form>
 
-                <div class="contact-item">
-                    <div class="contact-item-icon">📍</div>
-                    <h4>Localisation</h4>
-                    <p>Haute-Garonne (31)</p>
-                </div>
+        <div class="contact-info">
+            <div class="contact-item">
+                <div class="contact-item-icon">📧</div>
+                <h4>Email</h4>
+                <p>contact@eziotech.fr</p>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-item-icon">📍</div>
+                <h4>Localisation</h4>
+                <p>Haute-Garonne (31)</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer>
