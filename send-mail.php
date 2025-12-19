@@ -37,6 +37,8 @@ try {
     }
     
     // Récupération et nettoyage des données
+    $prenom = sanitize($_POST['prenom'] ?? '');
+    $nom = sanitize($_POST['nom'] ?? '');
     $nom_entreprise = sanitize($_POST['nom_entreprise'] ?? '');
     $email = filter_var(sanitize($_POST['email'] ?? ''), FILTER_VALIDATE_EMAIL);
     $telephone = sanitize($_POST['telephone'] ?? '');
@@ -44,24 +46,24 @@ try {
     $message = sanitize($_POST['message'] ?? '');
     
     // Validation des champs obligatoires
-    $errors = [];
-    
-    if (empty($nom_entreprise)) {
-        $errors[] = "Le nom/entreprise est requis";
-    }
-    
-    if (!$email) {
-        $errors[] = "Email invalide";
-    }
-    
-    if (empty($telephone)) {
-        $errors[] = "Le téléphone est requis";
-    }
-    
-    if (empty($service_demande)) {
-        $errors[] = "Le service est requis";
-    }
-    
+$errors = [];
+
+if (empty($prenom)) {
+    $errors[] = "Le prénom est requis";
+}
+
+if (empty($nom)) {
+    $errors[] = "Le nom est requis";
+}
+
+if (!$email) {
+    $errors[] = "Email invalide";
+}
+
+if (empty($service_demande)) {
+    $errors[] = "Le service est requis";
+} 
+
     // Vérifie les erreurs de validation
     if (!empty($errors)) {
         http_response_code(400);
@@ -100,13 +102,15 @@ try {
     
     // Préparation de la requête d'insertion
     $stmt = $pdo->prepare("
-        INSERT INTO contacts 
-        (nom_entreprise, email, telephone, service_demande, message, ip_address, user_agent) 
-        VALUES (?, ?, ?, ?, ?, ?, ?)
+        INSERT INTO contacts
+        (prenom, nom, nom_entreprise, email, telephone, service_demande, message, ip_address, user_agent)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
     ");
     
     // Exécution de l'insertion
     $result = $stmt->execute([
+        $prenom,
+        $nom,
         $nom_entreprise,
         $email,
         $telephone,
@@ -122,6 +126,8 @@ try {
         
         // Envoie un email de notification (optionnel)
         $emailData = [
+            'prenom'=> $prenom,
+            'nom'=> $nom,
             'nom_entreprise' => $nom_entreprise,
             'email' => $email,
             'telephone' => $telephone,
@@ -143,10 +149,9 @@ try {
         throw new Exception("Erreur lors de l'enregistrement");
     }
     
-} catch (Exception $e) {
+} catch (\Throwable $e) {
     // Gestion des erreurs
-    $code = $e->getCode() ?: 500;
-    http_response_code($code);
+    http_response_code(500);
     
     $errorMessage = ENVIRONMENT === 'dev' 
         ? $e->getMessage() 
@@ -160,4 +165,3 @@ try {
     // Log l'erreur
     error_log("Erreur formulaire contact : " . $e->getMessage());
 }
-?>
